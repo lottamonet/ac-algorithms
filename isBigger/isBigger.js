@@ -40,6 +40,18 @@ console.log(result) // -1
 
 
 function isBigger(a, b) {
-	//Your code here
+	if (typeof a === "string" || undefined) {
+	return -1;
+  }
+  if (typeof b === "string" || undefined) {
+	return -1;
+  }
+  if (a > b) {
+	return true;
+	} else if (a < b) {
+	return false;
+	} else {
+	return 0;
+	}
 	
 }
