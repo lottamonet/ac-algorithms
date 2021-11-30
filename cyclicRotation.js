@@ -14,6 +14,23 @@
 //
 //    For example, given array A = [3, 8, 9, 7, 6] and K = 3, the function should return [9, 7, 6, 3, 8].\
 
-function cyclicRotation(arr, rotation){
-    //Your code here...
-}
+
+function cyclicRotation(A, K){
+    if (K > 0){
+     for (let i = 0; i <= K; i++){
+        let end = A.pop();
+        A.unshift(end);
+      }
+    } else if (K < 0) {
+  for (let i = 0; i >= K; i++){
+    let beginning = A.shift();
+    A.push(beginning);
+      } 
+    }else {
+    return A;
+  }
+return A;
+      }
+ 
+
+console.log(cyclicRotation([3, 8, 9, 7, 6], 3));
