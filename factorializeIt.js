@@ -8,7 +8,11 @@
 // Check out Arithmetic Operators https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators
 
 function factorializeIt(num) {
-  //your code here
+  let number = 1;
+  for (let i = 1; i <= num; i++){
+   number= i * number;
+  }
+  return number;
 }
 
-factorializeIt(5);
+console.log(factorializeIt(5));
