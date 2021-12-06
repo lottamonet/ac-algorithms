@@ -34,6 +34,12 @@ console.log(result) // "ghimmnorstyy"
 **/
 
 function alphabetSoup(str) {
-	//Your code here
+	let strSplit = str.split("");//change string to an array
+	let orderedStrSplit = strSplit.sort();//reorder items in array
+	let newString = orderedStrSplit.join("");//turn array back into a string
+	let finalString = newString.trim();//trim blank spaces from string
+	return finalString;//return string
 	
 }
+
+console.log(alphabetSoup('carlotta'));
